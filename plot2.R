@@ -1,5 +1,6 @@
 eleccons<-read.table("household_power_consumption.txt", 
                      header=TRUE, sep=";",skip=66636, nrows=2880)
+#Just reading the two days worth of data
 summary(eleccons)
 tit<-read.table("household_power_consumption.txt", header=TRUE, sep=";", nrows=1)
 get.names<-names(tit)
